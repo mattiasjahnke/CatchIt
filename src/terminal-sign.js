@@ -33,6 +33,10 @@ module.exports = {
       const departureTime = moment(depature.ExpectedDateTime);
       const minutesUntil = Math.round(moment.duration(departureTime.diff(moment())).asMinutes() * 2) / 2;
 
+      if (minutesUntil < 0) {
+        return;
+      }
+
       log(
         chalk.bgBlack.white('│  ') +
         chalk.bgBlack.white.bold((depature.LineNumber + '  ').padEnd(5)) +
