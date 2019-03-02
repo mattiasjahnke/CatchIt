@@ -1,0 +1,20 @@
+{
+  "name": "catchit",
+  "version": "1.0.0",
+  "description": "Usage: Create a file .env and add API_KEY=<you key>. Install dependencies with npm install. Run with npm start.",
+  "main": "index.js",
+  "scripts": {
+    "start": "sloth 3 \"node index.js\" true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
+    "fetch-json": "^2.2.5",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.3.0",
+    "readline-sync": "^1.4.9",
+    "sloth-cli": "^1.0.2"
+  }
+}
