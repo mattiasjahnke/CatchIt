@@ -1,14 +1,16 @@
-require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const fetcher = require('./src/fetcher');
 const filters = require('./src/filters');
+
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const app = express();
 
 const sourceLocationObject = JSON.parse(process.env.SOURCE_LOCATION);
 
 // Routes
-app.use(express.static('./src/public'));
+app.use(express.static(path.join(__dirname, '/src/public')));
 
 app.get('/api/fetch', (req, res) => {
   if (this.departures !== undefined) {

@@ -1,5 +1,7 @@
+const path = require('path');
 const fetchJson = require('fetch-json');
-require('dotenv').config();
+
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
 const siteLookupApiKey = process.env.REALTIME_INFO_API_KEY;
 if (siteLookupApiKey === undefined) {

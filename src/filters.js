@@ -1,5 +1,8 @@
-require('dotenv').config();
+const path = require('path');
 const moment = require('moment');
+
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
+
 
 module.exports = {
   onlyBuses: () => {
