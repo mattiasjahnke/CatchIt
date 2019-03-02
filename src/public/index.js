@@ -12,6 +12,18 @@ class DepartureTable extends React.Component {
   }
 
   componentDidMount() {
+    this.interval = setInterval(() => {
+      this.updateState();
+    }, 1000 * 10);
+
+    this.updateState();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  updateState() {
     this.callApi()
       .then(res => this.setState({ departures: res.departures, location: res.location }))
       .catch(err => console.log(err));
