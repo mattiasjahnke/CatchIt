@@ -11,9 +11,12 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "dotenv": "^6.2.0",
+    "express": "^4.16.4",
     "fetch-json": "^2.2.5",
     "moment": "^2.24.0",
     "node-fetch": "^2.3.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "readline-sync": "^1.4.9",
     "sloth-cli": "^1.0.2"
   }

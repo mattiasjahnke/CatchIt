@@ -5,7 +5,7 @@ moment.locale('sv');
 
 module.exports = {
   printDepartures: (stationName, departures) => {
-    console.log(departures);
+    //console.log(departures);
     console.log('\033[2J');
 
     if (departures === undefined || departures.length === 0) {
