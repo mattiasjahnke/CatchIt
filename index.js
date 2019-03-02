@@ -17,6 +17,6 @@ const updateInfo = () => {
 };
 
 setInterval(updateTerminalSign, 10*1000);
-//setInterval(updateInfo, 1000*60*3);
+setInterval(updateInfo, 1000*60*3);
 
 updateInfo();
